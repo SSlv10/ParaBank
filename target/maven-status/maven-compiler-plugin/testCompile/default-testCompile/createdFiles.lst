@@ -1,0 +1,7 @@
+testCase\TC002_ForgetPassword.class
+pageObjects\AccountRegistration.class
+pageObjects\LoginPage.class
+pageObjects\BasePage.class
+pageObjects\ForgetPassword.class
+testBase\BaseClass.class
+testCase\TC001_AccountRegistration.class
