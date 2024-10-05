@@ -2,6 +2,8 @@ C:\Users\SSELVI\eclipse-workspace\ParaBank\src\test\java\pageObjects\AccountRegi
 C:\Users\SSELVI\eclipse-workspace\ParaBank\src\test\java\pageObjects\BasePage.java
 C:\Users\SSELVI\eclipse-workspace\ParaBank\src\test\java\pageObjects\ForgetPassword.java
 C:\Users\SSELVI\eclipse-workspace\ParaBank\src\test\java\pageObjects\LoginPage.java
+C:\Users\SSELVI\eclipse-workspace\ParaBank\src\test\java\pageObjects\LogOut.java
 C:\Users\SSELVI\eclipse-workspace\ParaBank\src\test\java\testBase\BaseClass.java
 C:\Users\SSELVI\eclipse-workspace\ParaBank\src\test\java\testCase\TC001_AccountRegistration.java
 C:\Users\SSELVI\eclipse-workspace\ParaBank\src\test\java\testCase\TC002_ForgetPassword.java
+C:\Users\SSELVI\eclipse-workspace\ParaBank\src\test\java\testCase\TC003_LoginTest.java

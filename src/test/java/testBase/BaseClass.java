@@ -1,6 +1,10 @@
 package testBase;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 
 import org.apache.commons.lang3.RandomStringUtils;
@@ -11,11 +15,19 @@ import org.testng.annotations.BeforeClass;
 public class BaseClass {
 	
 	public WebDriver driver;
+	public Properties p;
 	
 	
 	@BeforeClass
-	public void setup()
+	
+	
+	
+	public void setup() throws IOException
 	{
+		FileReader file = new FileReader("./src//test//resources//properties");
+		p= new Properties();
+		p.load(file);
+		
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		

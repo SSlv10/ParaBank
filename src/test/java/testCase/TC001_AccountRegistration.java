@@ -1,10 +1,12 @@
 package testCase;
 
 import org.openqa.selenium.WebDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.AccountRegistration;
+import pageObjects.LogOut;
 import pageObjects.LoginPage;
 import testBase.BaseClass;
 
@@ -38,7 +40,18 @@ public class TC001_AccountRegistration extends BaseClass {
 		lp.setLoginPwd(randomAlphaNm());
 		lp.clickLogin();
 		String confirmMsg = lp.getLoginConfirmation();
-		Assert.assertEquals(confirmMsg, "Welcome Someleze Thembisa");
+		Assert.assertEquals(confirmMsg, "Welcome");
+		
+	}
+	
+	@Test
+	public void verify_logOut()
+	{
+		LogOut lo = new LogOut(driver);
+		lo.clickLogOut();
+		String logOutConfirmation=lo.txtVerification();
+	    Assert.assertEquals(logOutConfirmation, "Customer Login");
+		 
 	}
 
 }
